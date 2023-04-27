@@ -84,7 +84,8 @@
 
 import axios from "axios";
 import { Command } from "../../structures/Command";
-import { ApplicationCommandOptionType } from "../../typings/Command";
+//import { ApplicationCommandOptionType } from "../../typings/Command";
+import { ApplicationCommandOptionType } from 'discord.js';
 
 export default new Command({
   name: "tickersen",
@@ -92,7 +93,7 @@ export default new Command({
   options: [
     {
       name: "symbol",
-      type: ApplicationCommandOptionType.STRING,
+      type: ApplicationCommandOptionType.String,
       description: "The symbol of the stock to look up",
       required: true,
     },
